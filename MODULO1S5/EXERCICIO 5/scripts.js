@@ -6,6 +6,7 @@
 
 // TI = DEV4567TI (Usuário) / IT&&||==2025.
 
+import { displayTable } from "./recursos_humanos";
 
 const selectElement = document.getElementById('setor')
 const btnSubmit = document.getElementById('btn-submit')
@@ -28,7 +29,7 @@ formulario.addEventListener('submit', (e) => {
             (campoUsuario === 'CMCL12' && campoSenha === 'Com&c1@l') ? login('success', "comercial"): login('error')
             break
         case 'RH':
-            (campoUsuario == '98HR' && campoSenha == 'RH!@2025')? login('success'): login('error')
+            (campoUsuario == '98HR' && campoSenha == 'RH!@2025')? login('success', 'recursos_humanos'): login('error')
             break
         
         case 'TI':
