@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tela de Login</h1>
+    
+    <form id="form" autocomplete="off">
+
+        <label for="usuario">Usuário (Código de Acesso):</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <br><br>
+
+        <label for="setor">Setor:</label>
+        <select id="setor" name="setor" required>
+            <option value="" disabled selected>Selecione o setor</option>
+            <option value="Comercial">Comercial</option>
+            <option value="RH">RH</option>
+            <option value="TI">TI</option>
+        </select>
+        <br><br>
+
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+
+        <button id="btn-submit" type="submit">Entrar</button>
+    </form>
+    <div id="div-status"></div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
