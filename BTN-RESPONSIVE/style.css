@@ -6,15 +6,41 @@ html{
 
 body{
     background-color: rgb(252, 244, 244);
-   
+    box-sizing: border-box;
 }
 
 form{
+
     display: flex;
     flex-wrap: wrap; 
     gap: 8px;
+    width: 90%;
+    margin:0 auto; 
 }
 
 h1{
     font-size: 3.0rem;
+}
+
+#name{
+ background-color: aquamarine;
+ flex-basis: 120px;
+ flex-grow: 1;
+ flex-shrink: 0;
+}
+
+#password{
+   background-color: aqua;
+   flex-basis: 120px;
+   flex-grow: 1;
+   flex-shrink: 0;
+
+}
+
+button{
+    flex-basis: 100px;
+    background-color: tomato;
+    border: 1px solid black;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
